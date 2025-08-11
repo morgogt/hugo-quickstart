@@ -1,0 +1,148 @@
+   <main>
+        <div class="section-title">Favourites</div>
+        <div class="favourites">
+            <div class="favourite-card">
+                <img src="https://placehold.co/112x112" alt="Favourite Model 1">
+                <span>Model</span>
+            </div>
+            <div class="favourite-card">
+                <img src="https://placehold.co/112x112" alt="Favourite Model 2">
+                <span>Model</span>
+            </div>
+            <div class="favourite-card">
+                <img src="https://placehold.co/112x112" alt="Favourite Model 3">
+                <span>Model</span>
+            </div>
+            <div class="favourite-card">
+                <img src="https://placehold.co/112x112" alt="Favourite Model 4">
+                <span>Model</span>
+            </div>
+            <div class="favourite-card">
+                <img src="https://placehold.co/112x112" alt="Favourite Model 5">
+                <span>Model</span>
+            </div>
+            <div class="favourite-card">
+                <img src="https://placehold.co/112x112" alt="Favourite Model 6">
+                <span>Model</span>
+            </div>
+            <div class="favourite-card">
+                <img src="https://placehold.co/112x112" alt="Favourite Model 7">
+                <span>Model</span>
+            </div>
+            <div class="favourite-card">
+                <img src="https://placehold.co/112x112" alt="Favourite Model 8">
+                <span>Model</span>
+            </div>
+        </div>
+    
+        <div class="section-title">Best Picks</div>
+        <div class="cards-row">
+            <div class="card" style="background-image:url('https://placehold.co/406x569')">
+                <div class="card-label">BEST</div>
+            </div>
+            <div class="card" style="background-image:url('https://placehold.co/406x569')">
+                <div class="card-label">BEST</div>
+            </div>
+            <div class="card" style="background-image:url('https://placehold.co/406x569')">
+                <div class="card-label">BEST</div>
+            </div>
+        </div>
+        <div class="cards-row">
+            <div class="card" style="background-image:url('https://placehold.co/406x569')">
+                <div class="card-label">BEST</div>
+            </div>
+            <div class="card" style="background-image:url('https://placehold.co/406x569')">
+                <div class="card-label">BEST</div>
+            </div>
+            <div class="card" style="background-image:url('https://placehold.co/406x569')">
+                <div class="card-label">BEST</div>
+            </div>
+        </div>
+        <div class="load-more">
+            <button class="load-more-btn">Load more</button>
+        </div>
+    </main>
+<style>
+        main {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 10px 0 0 0;
+        }
+        .section-title {
+            font-size: 35px;
+            font-weight: 600;
+            text-align: center;
+            margin: 20px 0 24px 0;
+        }
+        .favourites, .categories, .cards-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 48px;
+        }
+        .favourite-card, .category-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 130px;
+        }
+        .favourite-card img, .category-card img {
+            width: 112px;
+            height: 112px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 8px;
+        }
+        .favourite-card span, .category-card span {
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .cards-row {
+            gap: 32px;
+            justify-content: center;
+        }
+        .card {
+            width: 406px;
+            height: 569px;
+            border-radius: 8px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+        .card-label {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: rgba(45,45,45,0.59);
+            color: #fff;
+            font-size: 24px;
+            font-weight: 500;
+            padding: 8px 24px;
+            border-radius: 5px;
+            text-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+        }
+        .load-more {
+            display: flex;
+            justify-content: center;
+            margin: 48px 0;
+        }
+        .load-more-btn {
+            background: #D9D9D9;
+            border-radius: 5px;
+            border: none;
+            font-size: 24px;
+            font-family: 'Inter', sans-serif;
+            padding: 12px 48px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .load-more-btn:hover {
+            background: #E00083;
+            color: #fff;
+        }
+</style>
